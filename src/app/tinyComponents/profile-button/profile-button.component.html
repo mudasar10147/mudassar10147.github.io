@@ -1,0 +1,8 @@
+<div class="dropdown">
+    <div class="circle" (click)="openMenu()"></div>
+    <div class="dropdown-content" [ngStyle]="getDisplayBlock()">
+        <p class="clickAble" (click)="getInfo()" [routerLink]="['/userProfile']">Your Profile</p>
+        <p class="clickAble" [routerLink]="['/addAdventure']">Add Adventure</p>
+        <p class="clickAble" (click)="logOut()">Log Out</p>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+.textAlignCenter{
+    text-align: center;
+    transition: 1s;
+}
+.navbar{
+    background-color: #fff;
+    padding: 10px;
+    height: 60px;
+    margin: auto;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+    @media (max-width:1000px) {
+        width: 1000px;
+    }
+}
+.flexDisplay{
+    display: flex;
+    transition: 1s;
+}
+#nameAndSearchBar{
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+}
+.webPageName{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 1.70rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 12px;
+}
+.mainmenu{
+    list-style: none;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 30px;
+    padding-left: 0;
+}
+.active{
+    transition: 0.2s;
+}
+.socialMediaButtons{
+    display: grid;
+    align-items: end;
+    justify-content: end;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    width: 60%;
+}
+.equalWidth{
+    margin: auto;
+    width: 15%;
+}
+.nameAndSearchBar{
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 3fr;
+}
+
+.shadow{
+    box-shadow: -2px 4px 20px 0px #dfdede;
+}
+
+.blockDiv{
+    display: none;
+}
+.navbar-inverse{
+    
+    @media (max-width:1000px) {
+        width: 1000px;
+    }
+}
+@media (max-width:480px) {
+    .socialMediaButtons, .hideSocialMediaButtons{
+        display: none;
+    }
+    .signInDisplay{
+        width: 200px;
+        margin: 0;
+    }
+    .MenuButton{
+        width: 70px;
+        height: 60px;
+    }
+    .nameAndSearchBar{
+        grid-template-columns: 50px 100px 1fr;
+    }
+    .blockDiv{
+        display: block;
+        width: 200px;
+        height: 60px;
+    }
+}
+@media (min-width:480px){ 
+    .MenuButton{
+        display: none;
+    }
+}
+
+

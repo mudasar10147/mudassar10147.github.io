@@ -1,0 +1,7 @@
+<ul class="mainmenu" [ngStyle]="{'display': display}">
+    <li class="liTag"><a href="" [routerLink]="['/home']" class="button1" routerLinkActive="active">Home</a></li>
+    <li class="liTag"><a href="" [routerLink]="['/adventure']" (click)="updateAdventure()" class="button1" [ngClass]="{active: isActive}">Adventures</a></li>
+    <li class="liTag"><a href="" [routerLink]="['/shop']" class="button1" [ngClass]="{active: isActive}">Shop</a></li>
+    <li class="liTag"><a href="" [routerLink]="['/aboutus']" class="button1" style="width:60px" [ngClass]="{active: isActive}">About Us</a></li>
+    <li class="liTag"><a href="" [routerLink]="['/contactus']" class="button1" [ngClass]="{active: isActive}">Contact</a></li>
+</ul>

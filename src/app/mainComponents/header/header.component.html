@@ -1,0 +1,23 @@
+<div style="background-color: blue;" class="textAlignCenter" id="#navbarMainContainer">
+    <nav class="navbar navWidth shadow">
+        <div class="container flexDisplay">
+            <div class="nameAndSearchBar">
+                <div class="MenuButton">
+                    <!--<app-menubutton></app-menubutton> -->
+                </div>
+                <a href="" class="webPageName">Rasta</a>
+                <div>
+                    <app-searchbar></app-searchbar>
+                </div>
+            </div>
+            <div class="socialMediaButtons">
+                <app-nav-bar-buttons [display]="'flex'"></app-nav-bar-buttons>
+            </div>
+            <div class="blockDiv"></div>
+            <div class="equalWidth signInDisplay">
+                <app-sign-in></app-sign-in>
+                <app-profile-button *ngIf="isSignedIn"></app-profile-button>
+            </div>
+        </div>
+    </nav>
+</div>
